@@ -3,9 +3,9 @@ import React from 'react';
 function Home() {
     const styles = {
         body: {
-            margin: 0, // Remove margens do body
-            padding: 0, // Remove padding do body
-            backgroundColor: 'black', // Garante que o fundo do body seja preto
+            margin: 0,
+            padding: 0,
+            backgroundColor: 'black',
             height: '100vh',
         },
         container: {
@@ -21,7 +21,7 @@ function Home() {
     };
 
     React.useEffect(() => {
-        Object.assign(document.body.style, styles.body); // Aplica estilos ao body
+        Object.assign(document.body.style, styles.body);
     }, []);
 
     return (
