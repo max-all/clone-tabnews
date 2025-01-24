@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <div style={styles.container}>
-            <h1 style={styles.heading}>Patricia, Eu amo Você!</h1>
+            <h1 style={styles.heading}>Patricia, Eu amo Você! S2</h1>
         </div>
     );
 }
