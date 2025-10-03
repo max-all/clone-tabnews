@@ -1,32 +1,32 @@
-import React from "react";
+import { useEffect } from "react";
+
+const bodyStyle = {
+  margin: 0,
+  padding: 0,
+  backgroundColor: "black",
+  height: "100vh",
+};
+
+const containerStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+};
+
+const headingStyle = {
+  color: "white",
+  textAlign: "center",
+};
 
 function Home() {
-  const styles = {
-    body: {
-      margin: 0,
-      padding: 0,
-      backgroundColor: "black",
-      height: "100vh",
-    },
-    container: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100vh",
-    },
-    heading: {
-      color: "white",
-      textAlign: "center",
-    },
-  };
-
-  React.useEffect(() => {
-    Object.assign(document.body.style, styles.body);
+  useEffect(() => {
+    Object.assign(document.body.style, bodyStyle);
   }, []);
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Patricia, Eu amo Você!</h1>
+    <div style={containerStyle}>
+      <h1 style={headingStyle}>Patricia, Eu amo Você!</h1>
     </div>
   );
 }
